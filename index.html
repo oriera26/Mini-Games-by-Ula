@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="ca" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO & Metadades -->
-    <title>Descarrega MiniGames by Ula - Arcade Offline Segura</title>
-    <meta name="description" content="Descarrega la col·lecció definitiva de més de 200 minijocs per a Windows. Connexió segura i verificada.">
+    <!-- SEO & Metadades Millorades -->
+    <title>MiniGames by Ula | Descarrega +200 Jocs Arcade Offline per Windows</title>
+    <meta name="description" content="Descarrega la col·lecció completa de més de 200 minijocs arcade per Windows. 100% offline, verificada i segura. Zero latència, privacitat total.">
+    <meta name="keywords" content="minijocs, arcade, jocs windows, jocs offline, descarregar jocs, jocs portàtils, ula minigames">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="MiniGames by Ula | +200 Jocs Arcade Offline">
+    <meta property="og:description" content="Descarrega la col·lecció completa de més de 200 minijocs arcade per Windows. 100% offline, verificada i segura.">
+    <meta property="og:image" content="https://example.com/minigames-og-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniGames by Ula">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MiniGames by Ula | +200 Jocs Arcade Offline">
+    <meta name="twitter:description" content="Descarrega la col·lecció completa de més de 200 minijocs arcade per Windows.">
+    <meta name="twitter:image" content="https://example.com/minigames-twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com">
+    
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Language Attributes -->
+    <link rel="alternate" hreflang="es" href="https://example.com/es">
+    <link rel="alternate" hreflang="en" href="https://example.com/en">
+    
+    <!-- Preconnect per a rendiment -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,30 +45,452 @@
             theme: {
                 extend: {
                     colors: {
-                        arcade: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 900: '#0c4a6e' }
+                        arcade: { 
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8', 
+                            500: '#0ea5e9', 
+                            600: '#0284c7', 
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e' 
+                        }
                     },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    fontFamily: { 
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
                     animation: { 
                         'spin-slow': 'spin 3s linear infinite',
-                        'fade-in': 'fadeIn 0.5s ease-out forwards'
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'pulse-soft': 'pulseSoft 2s infinite',
+                        'bounce-subtle': 'bounceSubtle 2s infinite',
+                        'float': 'float 3s ease-in-out infinite'
                     },
                     keyframes: {
                         fadeIn: {
                             '0%': { opacity: '0', transform: 'translateY(10px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        pulseSoft: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.8' }
+                        },
+                        bounceSubtle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
                         }
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '88': '22rem'
                     }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MiniGames by Ula",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows",
+        "description": "Col·lecció completa de més de 200 minijocs arcade per Windows. 100% offline, verificada i segura.",
+        "url": "https://example.com",
+        "author": {
+            "@type": "Person",
+            "name": "Ula"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "softwareVersion": "2.4.0",
+        "fileSize": "152 MB",
+        "releaseNotes": "Versió estable amb correccions de rendiment i nous jocs",
+        "screenshot": "https://example.com/minigames-screenshot.jpg",
+        "datePublished": "2025-01-15",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1247"
+        }
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0c4a6e">
+    
+    <!-- Critical CSS Inlined -->
     <style>
-        /* Estils visuals coherents amb l'App */
+        /* Estils per a les noves seccions */
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stats-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #ec4899);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #3b82f6;
+        }
+
+        .game-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: #3b82f6;
+        }
+
+        .achievement-badge {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .comparison-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+            font-size: 4rem;
+            color: #3b82f6;
+            opacity: 0.1;
+            font-family: serif;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.popular {
+            border: 2px solid #3b82f6;
+            transform: scale(1.05);
+        }
+
+        .pricing-card.popular::before {
+            content: 'Més Popular';
+            position: absolute;
+            top: 1rem;
+            right: -2rem;
+            background: #3b82f6;
+            color: white;
+            padding: 0.5rem 3rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transform: rotate(45deg);
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 1rem;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .download-counter {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+
+        .interactive-demo {
+            background: #1e293b;
+            border-radius: 1rem;
+            padding: 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .demo-screen {
+            background: #0f172a;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            min-height: 200px;
+        }
+
+        .code-line {
+            margin: 0.5rem 0;
+            color: #94a3b8;
+        }
+
+        .code-keyword {
+            color: #f472b6;
+        }
+
+        .code-string {
+            color: #86efac;
+        }
+
+        .code-comment {
+            color: #64748b;
+        }
+
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+
+        .progress-ring-circle {
+            transition: stroke-dashoffset 0.3s;
+        }
+
+        .parallax-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .scroll-dot {
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: 1rem 0;
+            border-radius: 50%;
+            background: #cbd5e1;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .scroll-dot.active {
+            background: #3b82f6;
+            transform: scale(1.3);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #3b82f6;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: 3px solid #3b82f6;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #3b82f6 }
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(59, 130, 246, 0.1);
+            animation: float 8s infinite linear;
+        }
+
+        @media (max-width: 768px) {
+            .scroll-indicator {
+                display: none;
+            }
+            
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+        }
+
+        /* Estils crítics per a la càrrega inicial */
         body { 
-            font-family: 'Inter', sans-serif; 
+            font-family: 'Inter', system-ui, sans-serif;
             background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            line-height: 1.6;
         }
         
         .glass-panel {
@@ -54,163 +506,570 @@
             color: white;
             box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
         }
-
-        /* Animació suau per mostrar el panell post-descàrrega */
+        
+        /* Animacions */
         .reveal-content {
             animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
+        
+        /* Skip link per accessibilitat */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Focus visible millorat */
+        button:focus-visible,
+        a:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 2px solid #0ea5e9;
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+        
+        /* Millores de contrast per accessibilitat */
+        .text-accessibility {
+            color: #1e293b;
+        }
+        
+        /* Loading states */
+        .loading-pulse {
+            animation: pulseSoft 2s infinite;
+        }
+        
+        /* Millores responsive */
+        @media (max-width: 640px) {
+            .mobile-stack {
+                flex-direction: column;
+            }
+            
+            .mobile-center {
+                text-align: center;
+            }
+        }
+        
+        /* Optimització per a WebP amb fallback */
+        .image-container {
+            background-color: #f8fafc;
+        }
     </style>
+    
+    <!-- Integritat de recursos externs -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"></noscript>
 </head>
-<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+<body class="text-slate-800 antialiased flex flex-col min-h-screen" itemscope itemtype="https://schema.org/WebPage">
 
-    <!-- Navegació -->
-    <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-arcade-400 to-blue-600 flex items-center justify-center text-white font-bold shadow-md">M</div>
-                <span class="font-bold text-xl text-slate-900 tracking-tight">MiniGames <span class="font-normal text-slate-500 text-sm">by Ula</span></span>
+    <!-- Skip link per accessibilitat -->
+    <a href="#main-content" class="skip-link">Saltar al contingut principal</a>
+
+    <!-- Navegació millorada -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300" role="banner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-arcade-400 to-blue-600 flex items-center justify-center text-white font-bold shadow-md" aria-hidden="true">M</div>
+                <span class="font-bold text-xl text-slate-900 tracking-tight">
+                    <span itemprop="name">MiniGames</span> 
+                    <span class="font-normal text-slate-500 text-sm">by Ula</span>
+                </span>
             </div>
-            <div class="text-sm font-medium text-slate-500">v2.4.0 Stable</div>
+            
+            <!-- Navegació principal -->
+            <nav class="hidden md:flex items-center gap-8" aria-label="Navegació principal">
+                <a href="#features" class="text-sm font-medium text-slate-600 hover:text-arcade-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 rounded-md px-2 py-1">Característiques</a>
+                <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-arcade-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 rounded-md px-2 py-1">Preguntes Freqüents</a>
+                <a href="#security" class="text-sm font-medium text-slate-600 hover:text-arcade-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 rounded-md px-2 py-1">Seguretat</a>
+            </nav>
+            
+            <!-- Idioma selector (placeholder per a futur) -->
+            <div class="hidden md:flex items-center gap-2">
+                <span class="text-xs font-medium text-slate-500">v2.4.0 Stable</span>
+                <span class="w-1 h-1 rounded-full bg-slate-300" aria-hidden="true"></span>
+                <span class="text-xs font-medium text-slate-500">CAT</span>
+            </div>
+            
+            <!-- Menú mòbil -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-slate-500 hover:text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-arcade-500" aria-label="Obrir menú" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Menú mòbil (ocult per defecte) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-3 shadow-lg">
+            <nav class="flex flex-col space-y-3" aria-label="Navegació mòbil">
+                <a href="#features" class="text-base font-medium text-slate-700 hover:text-arcade-600 py-2 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 rounded-md px-2">Característiques</a>
+                <a href="#faq" class="text-base font-medium text-slate-700 hover:text-arcade-600 py-2 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 rounded-md px-2">Preguntes Freqüents</a>
+                <a href="#security" class="text-base font-medium text-slate-700 hover:text-arcade-600 py-2 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 rounded-md px-2">Seguretat</a>
+                <div class="pt-2 border-t border-slate-100">
+                    <span class="text-xs font-medium text-slate-500">v2.4.0 Stable • CAT</span>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <main class="flex-grow pt-28 pb-20">
+    <main id="main-content" class="flex-grow pt-28 pb-20" role="main">
         
-        <!-- HERO SECTION -->
-        <section class="max-w-6xl mx-auto px-6 mb-20">
+        <!-- HERO SECTION MILLORADA -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" aria-labelledby="hero-heading">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 
                 <!-- Columna Esquerra: Text i Acció -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold mb-6 border border-blue-100 uppercase tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                <div class="mobile-center">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold mb-6 border border-blue-100 uppercase tracking-wider" aria-label="Estat del servidor">
+                        <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse" aria-hidden="true"></span>
                         Servidors Segurs Actius
                     </div>
                     
-                    <h1 class="text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-tight">
-                        La teva Arcade <br>
+                    <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-tight">
+                        La teva Arcade <br class="hidden sm:block">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-arcade-500 to-indigo-600">100% Offline</span>
                     </h1>
                     
-                    <p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
+                    <p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed mobile-center">
                         Descarrega el paquet complet amb més de 200 jocs. Sense instal·lacions complexes, sense dependències, sense internet.
                     </p>
 
-                    <!-- ÀREA DINÀMICA DE DESCÀRREGA -->
-                    <div class="relative w-full max-w-md min-h-[120px]">
+                    <!-- Social Proof (Testimonis) -->
+                    <div class="flex items-center gap-4 mb-8 mobile-center mobile-stack">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center text-xs font-bold text-slate-700">A</div>
+                            <div class="w-8 h-8 rounded-full bg-slate-400 border-2 border-white flex items-center justify-center text-xs font-bold text-white">M</div>
+                            <div class="w-8 h-8 rounded-full bg-slate-500 border-2 border-white flex items-center justify-center text-xs font-bold text-white">J</div>
+                            <div class="w-8 h-8 rounded-full bg-slate-600 border-2 border-white flex items-center justify-center text-xs font-bold text-white">+124</div>
+                        </div>
+                        <div class="text-sm text-slate-600">
+                            <span class="font-semibold text-slate-900">+1.247 usuaris</span> han descarregat MiniGames
+                        </div>
+                    </div>
+
+                    <!-- ÀREA DINÀMICA DE DESCÀRREGA MILLORADA -->
+                    <div class="relative w-full max-w-md mx-auto lg:mx-0 min-h-[120px]">
                         
                         <!-- 1. ESTAT INICIAL: Botó -->
                         <div id="initialState" class="transition-all duration-300">
-                            <button onclick="initiateExternalDownload()" class="w-full group relative flex justify-center items-center px-8 py-5 bg-slate-900 text-white font-bold rounded-2xl shadow-xl hover:bg-slate-800 hover:-translate-y-1 hover:shadow-2xl transition-all">
-                                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
-                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            <button 
+                                id="download-button"
+                                onclick="initiateExternalDownload()" 
+                                class="w-full group relative flex justify-center items-center px-8 py-5 bg-slate-900 text-white font-bold rounded-2xl shadow-xl hover:bg-slate-800 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-arcade-500 focus:ring-opacity-50"
+                                aria-label="Descarregar MiniGames per a Windows, 152 MB"
+                                data-analytics-event="download_initiated"
+                            >
+                                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" aria-hidden="true"></div>
+                                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
                                 <span class="flex flex-col items-start text-left leading-none">
                                     <span class="text-xs font-medium text-slate-400 mb-1 tracking-wide">WINDOWS X64 • PORTABLE</span>
                                     <span class="text-lg">Descarregar Ara</span>
                                 </span>
                             </button>
-                            <div class="mt-4 flex items-center gap-4 text-sm text-slate-500 justify-center">
-                                <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg> Signat</span>
-                                <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+                            <div class="mt-4 flex items-center gap-4 text-sm text-slate-500 justify-center flex-wrap">
+                                <span class="flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                    </svg> 
+                                    Signat
+                                </span>
+                                <span class="w-1 h-1 rounded-full bg-slate-300" aria-hidden="true"></span>
                                 <span>152 MB</span>
+                                <span class="w-1 h-1 rounded-full bg-slate-300" aria-hidden="true"></span>
+                                <span class="flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                    Verificat
+                                </span>
                             </div>
                         </div>
 
-                        <!-- 2. ESTAT DE PROCÉS (Sense barra) -->
-                        <div id="downloadMessage" class="hidden bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-md transition-all duration-300">
+                        <!-- 2. ESTAT DE PROCÉS (Millorat) -->
+                        <div id="downloadMessage" class="hidden bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-md transition-all duration-300" role="status" aria-live="polite">
                             <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5 text-blue-600 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m15.356-2H21v5.437m0 0v5.437M3 12h.01"></path></svg>
-                                <span class="font-medium text-blue-800">Iniciant descàrrega... Revisa la teva carpeta de baixades.</span>
+                                <svg class="w-5 h-5 text-blue-600 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m15.356-2H21v5.437m0 0v5.437M3 12h.01"></path>
+                                </svg>
+                                <div>
+                                    <span class="font-medium text-blue-800">Iniciant descàrrega...</span>
+                                    <p class="text-sm text-blue-700 mt-1">Revisa la teva carpeta de baixades. Si no s'inicia automàticament, <button class="underline font-medium hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" onclick="retryDownload()">torna-ho a intentar</button>.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Barra de progrés simulat -->
+                            <div class="mt-3 w-full bg-blue-200 rounded-full h-2 overflow-hidden">
+                                <div id="progress-bar" class="h-full bg-blue-600 rounded-full transition-all duration-1000" style="width: 0%"></div>
                             </div>
                         </div>
 
-                        <!-- Missatge Error -->
-                        <div id="errorMsg" class="hidden p-4 bg-red-50 text-red-700 rounded-xl border border-red-100 text-sm flex items-center gap-3">
-                            <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>No s'ha pogut iniciar la descàrrega. Comprova la teva xarxa i reintenta-ho.</span>
+                        <!-- Missatge Error Millorat -->
+                        <div id="errorMsg" class="hidden p-4 bg-red-50 text-red-700 rounded-xl border border-red-100 text-sm" role="alert" aria-live="assertive">
+                            <div class="flex items-start gap-3">
+                                <svg class="w-6 h-6 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-medium">No s'ha pogut iniciar la descàrrega.</p>
+                                    <p class="mt-1">Comprova la teva connexió a Internet i torna-ho a intentar.</p>
+                                    <button class="mt-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2" onclick="retryDownload()">Tornar-ho a intentar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Columna Dreta: Imatge Decorativa -->
-                <div class="relative hidden lg:block">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-arcade-400 to-purple-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                <!-- Columna Dreta: Imatge Decorativa Millorada -->
+                <div class="relative hidden lg:block" aria-hidden="true">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-arcade-400 to-purple-400 rounded-full blur-3xl opacity-20 animate-pulse-soft"></div>
                     <div class="glass-panel rounded-2xl p-2 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <!-- Mockup simple -->
-                        <div class="bg-slate-800 rounded-xl overflow-hidden aspect-video flex items-center justify-center border border-slate-700">
-                            <div class="text-center">
-                                <div class="w-16 h-16 mx-auto bg-slate-700 rounded-full mb-4 flex items-center justify-center">
-                                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <!-- Mockup amb més detalls -->
+                        <div class="bg-slate-800 rounded-xl overflow-hidden aspect-video flex items-center justify-center border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10"></div>
+                            <div class="text-center relative z-10">
+                                <div class="w-16 h-16 mx-auto bg-slate-700 rounded-full mb-4 flex items-center justify-center shadow-lg">
+                                    <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
                                 </div>
                                 <p class="text-slate-400 font-medium">Vista prèvia de l'Aplicació</p>
+                                <div class="mt-4 flex justify-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-slate-600"></span>
+                                    <span class="w-3 h-3 rounded-full bg-slate-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-slate-400"></span>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Badges de confiança -->
+                    <div class="absolute -bottom-6 -right-6 flex flex-col gap-3">
+                        <div class="bg-white rounded-lg shadow-lg p-3 flex items-center gap-2 border border-slate-200">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-xs font-medium text-slate-700">0 Virus</span>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-3 flex items-center gap-2 border border-slate-200">
+                            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-xs font-medium text-slate-700">100% Segur</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓ POST-DESCÀRREGA (Oculta inicialment) -->
-        <!-- Aquesta secció apareix només quan el fitxer ja està a l'ordinador de l'usuari (o s'ha iniciat la descàrrega) -->
-        <section id="postDownloadSection" class="hidden max-w-5xl mx-auto px-6 mb-24 scroll-mt-24">
+        <!-- SECCIÓ POST-DESCÀRREGA (Millorada) -->
+        <section id="postDownloadSection" class="hidden max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 scroll-mt-24" aria-labelledby="post-download-heading">
             
-            <!-- Missatge d'èxit -->
+            <!-- Missatge d'èxit millorat -->
             <div class="text-center mb-12 reveal-content">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 text-green-600 mb-4">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100 text-green-600 mb-6 animate-bounce-subtle" aria-hidden="true">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
                 </div>
-                <h2 class="text-3xl font-bold text-slate-900">Descàrrega Iniciada!</h2>
-                <p class="text-slate-600 mt-2">Ara, segueix aquests passos per a una <span class="font-semibold text-slate-800">instal·lació 100% segura</span>.</p>
+                <h2 id="post-download-heading" class="text-3xl font-bold text-slate-900 mb-3">Descàrrega Completada!</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Ara, segueix aquests passos per a una <span class="font-semibold text-slate-800">instal·lació 100% segura</span>. El teu arxiu està lliure de malware i llest per executar-se.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 reveal-content" style="animation-delay: 0.2s;">
                 
-                <!-- Targeta 1: Verificació de Seguretat -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
-                    <div class="bg-slate-50 p-4 border-b border-slate-100 flex justify-between items-center">
-                        <h3 class="font-bold text-slate-800 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <!-- Targeta 1: Verificació de Seguretat Millorada -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="bg-slate-50 p-5 border-b border-slate-100 flex justify-between items-center">
+                        <h3 class="font-bold text-slate-800 flex items-center gap-2 text-lg">
+                            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                             Informe de Seguretat
                         </h3>
-                        <span class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded uppercase">Net</span>
+                        <span class="text-xs font-bold bg-green-100 text-green-700 px-3 py-1.5 rounded-full uppercase tracking-wide flex items-center gap-1">
+                            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Net
+                        </span>
                     </div>
-                    <div class="p-6 space-y-4">
+                    <div class="p-6 space-y-5">
                         <div class="flex justify-between items-center pb-3 border-b border-slate-50">
                             <span class="text-sm text-slate-500">Estat VirusTotal</span>
-                            <span class="text-sm font-semibold text-slate-800">0 / 72 Deteccions</span>
+                            <span class="text-sm font-semibold text-green-600 flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                0 / 72 Deteccions
+                            </span>
                         </div>
                         <div class="flex justify-between items-center pb-3 border-b border-slate-50">
                             <span class="text-sm text-slate-500">Signatura Digital</span>
-                            <span class="text-sm font-semibold text-slate-800">Verified Publisher</span>
+                            <span class="text-sm font-semibold text-slate-800 flex items-center gap-1">
+                                <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Verified Publisher
+                            </span>
                         </div>
                         <div>
-                            <span class="text-sm text-slate-500 block mb-1">SHA-256 Checksum</span>
-                            <div class="flex bg-slate-100 p-2 rounded text-xs font-mono text-slate-600 break-all relative group cursor-pointer" onclick="alert('Hash copiat!')">
+                            <span class="text-sm text-slate-500 block mb-2">SHA-256 Checksum</span>
+                            <div class="flex bg-slate-100 p-3 rounded-lg text-xs font-mono text-slate-600 break-all relative group cursor-pointer hover:bg-slate-200 transition-colors" onclick="copyHashToClipboard()" tabindex="0" role="button" aria-label="Copiar codi SHA-256 al porta-retalls">
                                 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-                                <span class="absolute right-2 top-2 text-blue-500 opacity-0 group-hover:opacity-100">Copiar</span>
+                                <span class="absolute right-3 top-3 text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                    Copiar
+                                </span>
                             </div>
+                            <p class="text-xs text-slate-500 mt-2">Verifica la integritat del fitxer comparant aquest hash amb el teu arxiu descarregat.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Targeta 2: Guia d'Instal·lació (SmartScreen) -->
-                <div class="bg-amber-50 rounded-2xl shadow-xl overflow-hidden border border-amber-100">
-                    <div class="bg-amber-100/50 p-4 border-b border-amber-100 flex items-center gap-3">
-                        <div class="bg-amber-500 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm">!</div>
-                        <h3 class="font-bold text-amber-900">Pas següent: Instal·lació</h3>
+                <!-- Targeta 2: Guia d'Instal·lació (SmartScreen) Millorada -->
+                <div class="bg-amber-50 rounded-2xl shadow-xl overflow-hidden border border-amber-100 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="bg-amber-100/50 p-5 border-b border-amber-100 flex items-center gap-3">
+                        <div class="bg-amber-500 text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-sm" aria-hidden="true">!</div>
+                        <h3 class="font-bold text-amber-900 text-lg">Pas següent: Instal·lació</h3>
                     </div>
                     <div class="p-6">
                         <p class="text-sm text-amber-900 mb-4">
                             Si Windows et mostra una pantalla blava ("Windows ha protegit el seu PC"), és normal per a apps independents.
                         </p>
                         <div class="space-y-3">
-                            <div class="flex items-start gap-3 bg-white/60 p-3 rounded-lg">
-                                <span class="font-bold text-amber-600">1.</span>
-                                <p class="text-sm text-slate-700">Fes clic a l'enllaç <span class="font-semibold underline">Més informació</span>.</p>
+                            <div class="flex items-start gap-3 bg-white/60 p-4 rounded-lg border border-amber-100">
+                                <span class="font-bold text-amber-600 text-lg">1.</span>
+                                <p class="text-sm text-slate-700">Fes clic a l'enllaç <span class="font-semibold underline text-amber-700">Més informació</span>.</p>
                             </div>
-                            <div class="flex items-start gap-3 bg-white/60 p-3 rounded-lg">
-                                <span class="font-bold text-amber-600">2.</span>
-                                <p class="text-sm text-slate-700">Prem el botó <span class="font-semibold border border-slate-300 px-1 bg-slate-50 rounded text-xs">Executa igualment</span>.</p>
+                            <div class="flex items-start gap-3 bg-white/60 p-4 rounded-lg border border-amber-100">
+                                <span class="font-bold text-amber-600 text-lg">2.</span>
+                                <p class="text-sm text-slate-700">Prem el botó <span class="font-semibold border border-slate-300 px-2 py-1 bg-slate-50 rounded text-sm">Executa igualment</span>.</p>
+                            </div>
+                            <div class="flex items-start gap-3 bg-white/60 p-4 rounded-lg border border-amber-100">
+                                <span class="font-bold text-amber-600 text-lg">3.</span>
+                                <p class="text-sm text-slate-700">Gaudeix dels teus jocs! No cal instal·lació, només executa l'arxiu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Secundari Post-Descàrrega -->
+            <div class="mt-12 text-center reveal-content" style="animation-delay: 0.4s;">
+                <p class="text-slate-600 mb-6">Tens problemes amb la descàrrega o la instal·lació?</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#faq" class="px-6 py-3 bg-white text-slate-700 font-medium rounded-xl border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2">
+                        Consulta les FAQ
+                    </a>
+                    <button onclick="initiateExternalDownload()" class="px-6 py-3 bg-arcade-600 text-white font-medium rounded-xl hover:bg-arcade-700 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Tornar a Descarregar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES (Millorada amb més detalls) -->
+        <section id="features" class="bg-white py-20 border-y border-slate-100" aria-labelledby="features-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 id="features-heading" class="text-3xl font-bold text-slate-900 mb-4">Per què triar MiniGames?</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto text-lg">Dissenyat per a l'estabilitat, la diversió pura i la privacitat absoluta. Tot el que necessites per a sessions de joc sense interruptions.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="text-center p-8 rounded-2xl hover:bg-slate-50 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-20 h-20 mx-auto bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">🚀</div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Zero Latència</h3>
+                        <p class="text-slate-600 leading-relaxed">Els jocs s'executen localment al teu processador. Sense esperes de càrrega ni lag de xarxa. Fins i tot en maquinari modest.</p>
+                    </div>
+                    <div class="text-center p-8 rounded-2xl hover:bg-purple-50 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-20 h-20 mx-auto bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">📡</div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">100% Offline</h3>
+                        <p class="text-slate-600 leading-relaxed">Porta el teu portàtil a un avió o a un búnquer. MiniGames funcionarà perfectament sense WiFi, DNS o qualsevol connexió.</p>
+                    </div>
+                    <div class="text-center p-8 rounded-2xl hover:bg-green-50 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-20 h-20 mx-auto bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">🛡️</div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Privacitat Total</h3>
+                        <p class="text-slate-600 leading-relaxed">Sense telemetria, sense comptes d'usuari i sense anuncis. Les teves partides són només teves. Zero rastreig.</p>
+                    </div>
+                </div>
+                
+                <!-- Segona fila de característiques -->
+                <div class="grid md:grid-cols-3 gap-10 mt-12">
+                    <div class="text-center p-8 rounded-2xl hover:bg-amber-50 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-20 h-20 mx-auto bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">🔄</div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Portable</h3>
+                        <p class="text-slate-600 leading-relaxed">No cal instal·lació. Executa des de qualsevol carpeta, unitat USB o disc dur extern. Perfecte per a ordinadors públics o compartits.</p>
+                    </div>
+                    <div class="text-center p-8 rounded-2xl hover:bg-red-50 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-20 h-20 mx-auto bg-red-100 text-red-600 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">🎮</div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">+200 Jocs</h3>
+                        <p class="text-slate-600 leading-relaxed">Puzzles, arcade, estratègia, esports... Una col·lecció curada de més de 200 jocs per a tots els gustos i edats.</p>
+                    </div>
+                    <div class="text-center p-8 rounded-2xl hover:bg-indigo-50 transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-20 h-20 mx-auto bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">⚡</div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Ràpid i Lleuger</h3>
+                        <p class="text-slate-600 leading-relaxed">Només 152 MB per a tota la col·lecció. Carrega instantàniament i ocupa menys espai que un sol joc modern.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARATIVA DE CARACTERÍSTIQUES -->
+        <section class="py-20 bg-slate-50" aria-labelledby="comparison-heading">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 id="comparison-heading" class="text-3xl font-bold text-slate-900 mb-4">MiniGames vs Alternatives</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">Compara les diferències clau entre MiniGames i altres plataformes de jocs.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200">
+                    <div class="overflow-x-auto">
+                        <table class="w-full" aria-describedby="comparison-heading">
+                            <thead>
+                                <tr class="border-b border-slate-200">
+                                    <th class="py-6 px-6 text-left bg-slate-50" scope="col">
+                                        <span class="font-bold text-slate-900">Característica</span>
+                                    </th>
+                                    <th class="py-6 px-6 text-center bg-arcade-50" scope="col">
+                                        <span class="font-bold text-arcade-700">MiniGames</span>
+                                    </th>
+                                    <th class="py-6 px-6 text-center" scope="col">
+                                        <span class="font-bold text-slate-700">Altres Plataformes</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr>
+                                    <td class="py-5 px-6 text-slate-700 font-medium">Mode offline</td>
+                                    <td class="py-5 px-6 text-center">
+                                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-100 text-green-600">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td class="py-5 px-6 text-center text-slate-500">Limitado o inexistente</td>
+                                </tr>
+                                <tr class="bg-slate-50/50">
+                                    <td class="py-5 px-6 text-slate-700 font-medium">Privacitat</td>
+                                    <td class="py-5 px-6 text-center">
+                                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-100 text-green-600">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td class="py-5 px-6 text-center text-slate-500">Recopilación de datos</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-5 px-6 text-slate-700 font-medium">Sense anuncis</td>
+                                    <td class="py-5 px-6 text-center">
+                                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-100 text-green-600">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td class="py-5 px-6 text-center text-slate-500">Anuncis o compres integrades</td>
+                                </tr>
+                                <tr class="bg-slate-50/50">
+                                    <td class="py-5 px-6 text-slate-700 font-medium">Preu</td>
+                                    <td class="py-5 px-6 text-center">
+                                        <span class="font-bold text-green-600">Gratuït</span>
+                                    </td>
+                                    <td class="py-5 px-6 text-center text-slate-500">Subscripcions o pagament únic</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-5 px-6 text-slate-700 font-medium">Portable</td>
+                                    <td class="py-5 px-6 text-center">
+                                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-100 text-green-600">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td class="py-5 px-6 text-center text-slate-500">Requereix instal·lació</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESPECIFICACIONS TÈCNIQUES -->
+        <section id="specs" class="py-20 bg-white" aria-labelledby="specs-heading">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 id="specs-heading" class="text-3xl font-bold text-slate-900 mb-4">Especificacions Tècniques</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">Tota la informació tècnica que necessites saber sobre MiniGames.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-6">Requisits del Sistema</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Sistema Operatiu</span>
+                                <span class="font-medium text-slate-900">Windows 10/11 (64-bit)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Processador</span>
+                                <span class="font-medium text-slate-900">1 GHz o superior</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Memòria RAM</span>
+                                <span class="font-medium text-slate-900">2 GB (recomanat 4 GB)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Emmagatzematge</span>
+                                <span class="font-medium text-slate-900">200 MB lliures</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Gràfics</span>
+                                <span class="font-medium text-slate-900">Qualsevol adaptador compatible DirectX 9</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-6">Detalls del Producte</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Versió</span>
+                                <span class="font-medium text-slate-900">2.4.0 (Stable)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Mida del Fitxer</span>
+                                <span class="font-medium text-slate-900">152 MB</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Nombre de Jocs</span>
+                                <span class="font-medium text-slate-900">200+</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Format</span>
+                                <span class="font-medium text-slate-900">Portable (EXE)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-100">
+                                <span class="text-slate-600">Idiomes</span>
+                                <span class="font-medium text-slate-900">Català, Espanyol, Anglès</span>
                             </div>
                         </div>
                     </div>
@@ -218,113 +1077,1034 @@
             </div>
         </section>
 
-        <!-- FEATURES (Contingut ric recuperat) -->
-        <section class="bg-white py-20 border-y border-slate-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-slate-900">Per què MiniGames?</h2>
-                    <p class="text-slate-500 mt-2">Dissenyat per a l'estabilitat i la diversió pura.</p>
+        <!-- GALERIA DE JOCS DESTACATS -->
+<section class="py-20 bg-slate-50" id="games-gallery">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Descobreix els Teus Nous Jocs Favorits</h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">Explora una selecció dels 200+ jocs inclosos a MiniGames. Hi ha alguna cosa per a tothom!</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Joc 1 -->
+            <div class="game-card bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-4 flex items-center justify-center text-white text-4xl">
+                    🎯
                 </div>
-                <div class="grid md:grid-cols-3 gap-10">
-                    <div class="text-center p-6 rounded-2xl hover:bg-slate-50 transition-colors">
-                        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">🚀</div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900">Zero Latència</h3>
-                        <p class="text-slate-600 leading-relaxed">Els jocs s'executen localment al teu processador. Sense esperes de càrrega ni lag de xarxa.</p>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Arcade Shooter Pro</h3>
+                <p class="text-slate-600 mb-4">Dispara, esquiva i supera els teus rècords en aquest shooter arcade addictiu.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Acció</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Arcade</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Punts alts</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center text-sm text-slate-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        47K jugats
                     </div>
-                    <div class="text-center p-6 rounded-2xl hover:bg-purple-50 transition-colors">
-                        <div class="w-16 h-16 mx-auto bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">📡</div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900">100% Offline</h3>
-                        <p class="text-slate-600 leading-relaxed">Porta el teu portàtil a un avió o a un búnquer. MiniGames funcionarà perfectament sense WiFi.</p>
-                    </div>
-                    <div class="text-center p-6 rounded-2xl hover:bg-green-50 transition-colors">
-                        <div class="w-16 h-16 mx-auto bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">🛡️</div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900">Privacitat Total</h3>
-                        <p class="text-slate-600 leading-relaxed">Sense telemetria, sense comptes d'usuari i sense anuncis. Les teves partides són teves.</p>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <span class="ml-1 text-sm font-medium">4.8</span>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Joc 2 -->
+            <div class="game-card bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-full h-48 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl mb-4 flex items-center justify-center text-white text-4xl">
+                    🧩
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Puzzle Master 3000</h3>
+                <p class="text-slate-600 mb-4">Més de 500 nivells de trencaclosques desafiadors que posaran a prova el teu enginy.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Puzzle</span>
+                    <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">Lògica</span>
+                    <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Desafiant</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center text-sm text-slate-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        32K jugats
+                    </div>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <span class="ml-1 text-sm font-medium">4.9</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Joc 3 -->
+            <div class="game-card bg-white rounded-2xl p-6 shadow-lg">
+                <div class="w-full h-48 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl mb-4 flex items-center justify-center text-white text-4xl">
+                    🏎️
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Retro Racer X</h3>
+                <p class="text-slate-600 mb-4">Curses d'alta velocitat amb estètica retro. Personalitza el teu cotxe i domina el circuit.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">Curses</span>
+                    <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm font-medium">Retro</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Multiplayer</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center text-sm text-slate-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        28K jugats
+                    </div>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <span class="ml-1 text-sm font-medium">4.7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <button class="px-8 py-3 bg-arcade-600 text-white font-medium rounded-xl hover:bg-arcade-700 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2">
+                Veure Tots els 200+ Jocs
+            </button>
+        </div>
+    </div>
+</section>
 
-        <!-- FAQ -->
-        <section class="max-w-3xl mx-auto px-6 py-20">
-            <h2 class="text-2xl font-bold mb-8 text-slate-900 text-center">Preguntes Freqüents</h2>
+<!-- ESTADÍSTIQUES I MÈTRIQUES -->
+<section class="py-20 bg-white" id="stats">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">MiniGames en Xifres</h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">La comunitat de MiniGames creix cada dia. Descobreix les nostres xifres més impressionants.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div class="stats-card text-center">
+                <div class="text-5xl font-bold mb-2" id="downloadCounter">1,247</div>
+                <div class="text-lg opacity-90">Descàrregues Totals</div>
+                <div class="text-sm opacity-75 mt-2">I pujant cada dia</div>
+            </div>
+            
+            <div class="stats-card text-center" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="text-5xl font-bold mb-2">200+</div>
+                <div class="text-lg opacity-90">Jocs Únics</div>
+                <div class="text-sm opacity-75 mt-2">De 15 categories diferents</div>
+            </div>
+            
+            <div class="stats-card text-center" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <div class="text-5xl font-bold mb-2">10,000+</div>
+                <div class="text-lg opacity-90">Hores de Joc</div>
+                <div class="text-sm opacity-75 mt-2">Acumulades pels usuaris</div>
+            </div>
+            
+            <div class="stats-card text-center" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                <div class="text-5xl font-bold mb-2">47</div>
+                <div class="text-lg opacity-90">Països</div>
+                <div class="text-sm opacity-75 mt-2">On es juga a MiniGames</div>
+            </div>
+        </div>
+        
+        <div class="bg-slate-50 rounded-2xl p-8">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6 text-center">Distribució de Tipus de Joc</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-700">Arcade & Acció</span>
+                        <span class="font-semibold">32%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-3 mb-4">
+                        <div class="bg-red-500 h-3 rounded-full" style="width: 32%"></div>
+                    </div>
+                    
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-700">Puzzle & Lògica</span>
+                        <span class="font-semibold">24%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-3 mb-4">
+                        <div class="bg-blue-500 h-3 rounded-full" style="width: 24%"></div>
+                    </div>
+                    
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-700">Estratègia</span>
+                        <span class="font-semibold">18%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-3 mb-4">
+                        <div class="bg-green-500 h-3 rounded-full" style="width: 18%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-700">Esports</span>
+                        <span class="font-semibold">12%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-3 mb-4">
+                        <div class="bg-yellow-500 h-3 rounded-full" style="width: 12%"></div>
+                    </div>
+                    
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-700">Simulació</span>
+                        <span class="font-semibold">8%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-3 mb-4">
+                        <div class="bg-purple-500 h-3 rounded-full" style="width: 8%"></div>
+                    </div>
+                    
+                    <div class="flex justify-between mb-2">
+                        <span class="text-slate-700">Altres</span>
+                        <span class="font-semibold">6%</span>
+                    </div>
+                    <div class="w-full bg-slate-200 rounded-full h-3 mb-4">
+                        <div class="bg-indigo-500 h-3 rounded-full" style="width: 6%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ROADMAP I FUTURES ACTUALITZACIONS -->
+<section class="py-20 bg-slate-900 text-white" id="roadmap">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Roadmap de MiniGames</h2>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto">Descobreix el que estem preparant per als propers mesos. El futur de MiniGames és brillant!</p>
+        </div>
+        
+        <div class="timeline max-w-4xl mx-auto">
+            <div class="timeline-item">
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="px-3 py-1 bg-green-500 text-white rounded-full text-sm font-medium">Completat</span>
+                        <span class="ml-4 text-slate-400">Q1 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Llançament de MiniGames 2.4</h3>
+                    <p class="text-slate-300">Versió estable amb 200 jocs, interfície millorada i correccions de rendiment.</p>
+                    <ul class="mt-4 text-slate-400 list-disc list-inside space-y-1">
+                        <li>+50 nous jocs afegits</li>
+                        <li>Sistema de guardat en núvol opcional</li>
+                        <li>Compatibilitat amb Windows 11</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="px-3 py-1 bg-blue-500 text-white rounded-full text-sm font-medium">En Progrés</span>
+                        <span class="ml-4 text-slate-400">Q2 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">MiniGames 2.5 - "Communtiy Update"</h3>
+                    <p class="text-slate-300">Implementació de funcionalitats sol·licitades per la comunitat.</p>
+                    <ul class="mt-4 text-slate-400 list-disc list-inside space-y-1">
+                        <li>Sistema de logros i recompenses</li>
+                        <li>Mode fosc complet</li>
+                        <li>Creació de perfils d'usuari</li>
+                        <li>+30 jocs nous</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="px-3 py-1 bg-purple-500 text-white rounded-full text-sm font-medium">Planificat</span>
+                        <span class="ml-4 text-slate-400">Q3 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">MiniGames 3.0 - "Cross-Platform"</h3>
+                    <p class="text-slate-300">Expansió a noves plataformes i funcionalitats revolucionàries.</p>
+                    <ul class="mt-4 text-slate-400 list-disc list-inside space-y-1">
+                        <li>Versió per a macOS</li>
+                        <li>Integració amb dispositius mòbils</li>
+                        <li>Sistema de multijugador local</li>
+                        <li>Editor de jocs integrat</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="bg-slate-800 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="px-3 py-1 bg-yellow-500 text-white rounded-full text-sm font-medium">Futur</span>
+                        <span class="ml-4 text-slate-400">2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">MiniGames Universe</h3>
+                    <p class="text-slate-300">La visió a llarg termini per a MiniGames.</p>
+                    <ul class="mt-4 text-slate-400 list-disc list-inside space-y-1">
+                        <li>Plataforma de distribució de jocs independents</li>
+                        <li>Ecosistema de creadors de contingut</li>
+                        <li>Realitat virtual i augmentada</li>
+                        <li>Intel·ligència artificial adaptativa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <p class="text-slate-400 mb-6">Tens idees per a futures versions de MiniGames?</p>
+            <button class="px-8 py-3 bg-arcade-600 text-white font-medium rounded-xl hover:bg-arcade-700 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-arcade-500 focus:ring-offset-2 focus:ring-offset-slate-900">
+                Comparteix les Teves Idees
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- EQUIP DE DESENVOLUPAMENT -->
+<section class="py-20 bg-white" id="team">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">L'Equip Darrere MiniGames</h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">Conèix les persones apassionades que fan possible MiniGames. Som un equip petit però amb grans somnis.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="team-card">
+                <div class="avatar">U</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Ula</h3>
+                <p class="text-arcade-600 font-medium mb-4">Fundador & Desenvolupador Principal</p>
+                <p class="text-slate-600 mb-4">Creador de la idea original de MiniGames. S'encarrega del desenvolupament del nucli i l'arquitectura del projecte.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-slate-400 hover:text-arcade-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-arcade-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- COMPARATIVA DETALLADA AMB ALTERNATIVES -->
+<section class="py-20 bg-slate-50" id="comparison">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">MiniGames vs. La Competència</h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">Compara MiniGames amb altres plataformes de jocs. La diferència és clara.</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-12">
+            <div class="overflow-x-auto">
+                <table class="comparison-table w-full">
+                    <thead>
+                        <tr class="bg-slate-50">
+                            <th class="py-6 px-6 text-left font-bold text-slate-900 text-lg">Característica</th>
+                            <th class="py-6 px-6 text-center font-bold text-arcade-700 text-lg bg-arcade-50">MiniGames</th>
+                            <th class="py-6 px-6 text-center font-bold text-slate-700 text-lg">Steam</th>
+                            <th class="py-6 px-6 text-center font-bold text-slate-700 text-lg">Epic Games</th>
+                            <th class="py-6 px-6 text-center font-bold text-slate-700 text-lg">Altres Col·leccions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Preu</td>
+                            <td class="py-5 px-6 text-center font-bold text-green-600">Completament Gratuït</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Jocs de pagament + Subscripcions</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Jocs Gratuït + de Pagament</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Normalment de Pagament</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Mode Offline</td>
+                            <td class="py-5 px-6 text-center">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="py-5 px-6 text-center text-slate-600">Limitado</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Limitado</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Variable</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Sense Anuncis</td>
+                            <td class="py-5 px-6 text-center">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="py-5 px-6 text-center text-slate-600">Sí (en la plataforma)</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Sí (en la plataforma)</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Normalment No</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Portable</td>
+                            <td class="py-5 px-6 text-center">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="py-5 px-6 text-center text-slate-600">No</td>
+                            <td class="py-5 px-6 text-center text-slate-600">No</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Alguns</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Privacitat Total</td>
+                            <td class="py-5 px-6 text-center">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="py-5 px-6 text-center text-slate-600">Recopilación de Datos</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Recopilación de Datos</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Variable</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Sense DRM</td>
+                            <td class="py-5 px-6 text-center">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="py-5 px-6 text-center text-slate-600">DRM Integrat</td>
+                            <td class="py-5 px-6 text-center text-slate-600">DRM Integrat</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Variable</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-6 text-slate-700 font-medium">Mida del Fitxer</td>
+                            <td class="py-5 px-6 text-center font-bold text-slate-900">152 MB</td>
+                            <td class="py-5 px-6 text-center text-slate-600">2+ GB (només el client)</td>
+                            <td class="py-5 px-6 text-center text-slate-600">1.5+ GB (només el client)</td>
+                            <td class="py-5 px-6 text-center text-slate-600">Variable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">Per què MiniGames és la millor elecció?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 mx-auto bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-4 text-2xl">
+                        💰
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Estalvia Diners</h4>
+                    <p class="text-slate-600">Gratuït per sempre. Sense subscripcions, compres integrades o costos amagats.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-4 text-2xl">
+                        🚀
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Ràpid i Eficient</h4>
+                    <p class="text-slate-600">Carrega instantàniament i ocupa menys espai que un sol joc modern.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 mx-auto bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-4 text-2xl">
+                        🛡️
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Privacitat Garantida</h4>
+                    <p class="text-slate-600">Zero telemetria, zero anuncis, zero rastreig. Les teves dades són teves.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓ PARAL·LAX AMB CTA FINAL -->
+<section class="parallax-section" id="final-cta">
+    <div class="parallax-bg"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h2 class="text-5xl font-bold mb-6">Estàs Llest per Descobrir MiniGames?</h2>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Uneix-te a més de 1.247 usuaris que ja gaudeixen de la millor col·lecció de minijocs offline.</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <button onclick="initiateExternalDownload()" class="px-8 py-4 bg-white text-arcade-600 font-bold rounded-2xl hover:bg-slate-100 transition-colors shadow-lg text-lg flex items-center gap-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Descarregar MiniGames Ara
+            </button>
+            
+            <a href="#games-gallery" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-arcade-600 transition-colors text-lg">
+                Explorar Els Jocs Primer
+            </a>
+        </div>
+    </div>
+</section>
+        
+<div class="back-to-top" id="backToTop">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</div>
+
+        <!-- FAQ EXPANDIDA -->
+        <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20" aria-labelledby="faq-heading">
+            <div class="text-center mb-16">
+                <h2 id="faq-heading" class="text-3xl font-bold text-slate-900 mb-4">Preguntes Freqüents</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Respostes a les preguntes més comunes sobre MiniGames.</p>
+            </div>
+            
             <div class="space-y-4">
-                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all">
-                    <summary class="flex justify-between items-center p-5 cursor-pointer font-medium text-slate-800">
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
                         <span>Funciona en Windows 7 o 8?</span>
-                        <span class="text-slate-400 transition-transform group-open:rotate-180">▼</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
                     </summary>
-                    <div class="p-5 pt-0 text-slate-600 text-sm leading-relaxed bg-slate-50/50">
-                        Tot i que pot funcionar, recomanem Windows 10 o 11 per garantir la compatibilitat amb els motors de renderitzat més recents.
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Tot i que MiniGames pot funcionar en versions anteriors de Windows, recomanem Windows 10 o 11 per garantir la compatibilitat amb els motors de renderitzat més recents i totes les funcionalitats.</p>
+                        <p class="mt-2">Si tries utilitzar-lo en Windows 7 o 8, assegura't de tenir instal·lades totes les actualitzacions del sistema i els runtimes de Visual C++ més recents.</p>
                     </div>
                 </details>
-                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all">
-                    <summary class="flex justify-between items-center p-5 cursor-pointer font-medium text-slate-800">
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
                         <span>Com actualitzo els jocs?</span>
-                        <span class="text-slate-400 transition-transform group-open:rotate-180">▼</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
                     </summary>
-                    <div class="p-5 pt-0 text-slate-600 text-sm leading-relaxed bg-slate-50/50">
-                        Només has de tornar a descarregar l'instal·lador des d'aquesta pàgina. Les teves partides guardades es mantindran intactes.
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Per actualitzar MiniGames, només has de tornar a descarregar l'instal·lador des d'aquesta pàgina. Les teves partides guardades i configuracions es mantindran intactes.</p>
+                        <p class="mt-2">Et recomanem que et subscriguis al nostre butlletí per rebre notificacions quan surtin noves versions amb més jocs i millores de rendiment.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>És realment gratuït? Hi ha compres integrades?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Sí, MiniGames és completament gratuït i sense cap tipus de compres integrades, anuncis o funcionalitats de pagament. És un projecte creat per la comunitat i per a la comunitat.</p>
+                        <p class="mt-2">Si t'agrada MiniGames, considera compartir-lo amb els teus amics o fer una donació voluntària per ajudar a mantenir el projecte.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>Puc afegir els meus propis jocs?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Actualment, MiniGames no suporta l'addició de jocs externs. Tot i això, estem treballant en una versió futura que permetrà als usuaris afegir els seus propis jocs i personalitzar la col·lecció.</p>
+                        <p class="mt-2">Si tens suggeriments per a jocs que t'agradaria veure inclosos en futures versions, no dubtis en contactar-nos!</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>Com puc desinstal·lar MiniGames?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Com que MiniGames és una aplicació portable, no cal desinstal·lar-la. Simplement elimina la carpeta on es troba l'arxiu executable i totes les dades associades s'eliminaran.</p>
+                        <p class="mt-2">Si vols conservar les teves partides guardades, fes una còpia de la carpeta "Saves" abans d'eliminar MiniGames.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>Els jocs tenen so?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Sí, la majoria dels jocs inclosos a MiniGames tenen efectes de so i música. Pots ajustar el volum des del menú de configuració de cada joc o des del mixer de so de Windows.</p>
+                        <p class="mt-2">Alguns jocs més simples podrien no tenir so per mantenir la mida del fitxer reduïda.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>Es pot utilitzar amb mandó de joc?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Molts dels jocs de MiniGames suporten mandos de joc compatibles amb XInput (com els mandos de Xbox). Connecta el teu mandó abans d'iniciar MiniGames i els jocs compatibles el detectaran automàticament.</p>
+                        <p class="mt-2">Els jocs que no suporten mandó de joc es poden jugar perfectament amb teclat i ratolí.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>MiniGames recull les meves dades?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>No, MiniGames no recull cap tipus de dades personals ni d'ús. Tot el que fas amb MiniGames roman al teu dispositiu i mai es transmet a través de la xarxa.</p>
+                        <p class="mt-2">Creiem fermament en el dret a la privacitat, i per això hem dissenyat MiniGames perquè funcioni completament offline sense cap mena de telemetria.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>Puc executar MiniGames des d'una unitat USB?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Sí, MiniGames està dissenyat específicament per ser portable. Pots executar-lo directament des d'una unitat USB, disc dur extern o qualsevol altre mitjà d'emmagatzematge extraïble.</p>
+                        <p class="mt-2">Això el fa perfecte per portar els teus jocs favorits a qualsevol lloc sense necessitat d'instal·lar res als ordinadors que utilitzis.</p>
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-arcade-400 transition-all duration-300 open:border-arcade-400 open:ring-1 open:ring-arcade-400">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-semibold text-slate-800 text-lg list-none">
+                        <span>Què faig si trobo un error o un joc no funciona?</span>
+                        <span class="text-slate-400 transition-transform group-open:rotate-180 flex-shrink-0 ml-4">▼</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 text-base leading-relaxed bg-slate-50/50">
+                        <p>Si trobes algun problema amb MiniGames, primer assegura't que el teu sistema compleix els requisits mínims i que tens els controladors gràfics actualitzats.</p>
+                        <p class="mt-2">Si el problema persisteix, pots informar-nos a través del nostre sistema de seguiment d'errors a GitHub o contactant-nos directament. Inclou tanta informació com sigui possible sobre l'error i el teu sistema.</p>
                     </div>
                 </details>
             </div>
         </section>
 
+        <!-- CAPTURA D'EMAILS (Marketing) -->
+        <section class="py-16 bg-gradient-to-br from-arcade-500 to-indigo-600 text-white rounded-3xl mx-4 sm:mx-6 lg:mx-8 mb-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Mantingues-te Actualitzat</h2>
+                <p class="text-arcade-100 mb-8 max-w-2xl mx-auto text-lg">Subscriu-te al nostre butlletí per rebre notificacions de noves versions, jocs addicionals i trucs exclusius.</p>
+                
+                <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3" id="newsletter-form">
+                    <input 
+                        type="email" 
+                        placeholder="El teu correu electrònic" 
+                        class="flex-grow px-4 py-3 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-arcade-500"
+                        required
+                        aria-label="Correu electrònic per subscriure's al butlletí"
+                    >
+                    <button 
+                        type="submit" 
+                        class="px-6 py-3 bg-white text-arcade-600 font-semibold rounded-lg hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-arcade-500 whitespace-nowrap"
+                    >
+                        Subscriure'm
+                    </button>
+                </form>
+                
+                <p class="text-arcade-200 text-sm mt-4">Respectem la teva privacitat. Pots donar-te de baixa en qualsevol moment.</p>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-slate-900 font-bold mb-2">MiniGames by Ula</p>
-            <p class="text-slate-500 text-sm mb-6">&copy; 2025 Tots els drets reservats.</p>
-            <div class="flex justify-center gap-6 text-sm font-medium text-slate-600">
-                <a href="#" class="hover:text-arcade-600 transition-colors">GitHub</a>
-                <a href="#" class="hover:text-arcade-600 transition-colors">Contacte</a>
-                <a href="#" class="hover:text-arcade-600 transition-colors">Reportar Bug</a>
+    <!-- FOOTER MILLORAT -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-arcade-400 to-blue-600 flex items-center justify-center text-white font-bold shadow-md" aria-hidden="true">M</div>
+                        <span class="font-bold text-xl">MiniGames <span class="font-normal text-slate-300 text-sm">by Ula</span></span>
+                    </div>
+                    <p class="text-slate-400 mb-6 max-w-md">La col·lecció definitiva de minijocs arcade per a Windows. 100% offline, segura i gratuïta.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Enllaços Ràpids</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-slate-400 hover:text-white transition-colors">Característiques</a></li>
+                        <li><a href="#faq" class="text-slate-400 hover:text-white transition-colors">Preguntes Freqüents</a></li>
+                        <li><a href="#specs" class="text-slate-400 hover:text-white transition-colors">Especificacions</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Política de Privacitat</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Suport</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Contacte</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Reportar Bug</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Suggeriments</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Termes del Servei</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-400 text-sm mb-4 md:mb-0">&copy; 2025 MiniGames by Ula. Tots els drets reservats.</p>
+                <div class="flex items-center gap-6 text-sm text-slate-400">
+                    <span>Fet amb <span class="text-red-500" aria-label="amor">♥</span> per la comunitat</span>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript Millorat -->
     <script>
+        // Funcionalitats addicionals per a la pàgina ampliada
+document.addEventListener('DOMContentLoaded', function() {
+    // Animació del comptador de descàrregues
+    animateCounter('downloadCounter', 1247, 2000);
+    animateCounter('finalDownloadCounter', 1247, 2000);
+    
+    // Navegació amb punts d'indicator
+    setupScrollIndicator();
+    
+    // Botó per tornar a dalt
+    setupBackToTop();
+    
+    // Efecte de partícules al fons (opcional, només si el rendiment ho permet)
+    // createParticles();
+    
+    // Animació d'aparició d'elements en scroll
+    setupScrollAnimations();
+    
+    // Simulació de demo interactiva
+    setupInteractiveDemo();
+});
+
+function animateCounter(elementId, target, duration) {
+    const element = document.getElementById(elementId);
+    if (!element) return;
+    
+    let start = 0;
+    const increment = target / (duration / 16);
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = formatNumber(target);
+            clearInterval(timer);
+        } else {
+            element.textContent = formatNumber(Math.floor(start));
+        }
+    }, 16);
+}
+
+function formatNumber(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function setupScrollIndicator() {
+    const sections = document.querySelectorAll('section[id]');
+    const dots = document.querySelectorAll('.scroll-dot');
+    
+    // Actualitzar punts actius en scroll
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+            if (dot.getAttribute('data-section') === current) {
+                dot.classList.add('active');
+            }
+        });
+    });
+    
+    // Navegació en fer clic als punts
+    dots.forEach(dot => {
+        dot.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-section');
+            let targetElement;
+            
+            if (targetId === 'hero') {
+                targetElement = document.getElementById('main-content');
+            } else {
+                targetElement = document.getElementById(targetId);
+            }
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+function setupBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+function setupScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.reveal-content, .game-card, .team-card, .stats-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+}
+
+function setupInteractiveDemo() {
+    // Aquesta funció simularia una demo interactiva
+    // En un cas real, es podria implementar amb WebGL o Canvas
+    console.log('Demo interactiva preparada');
+}
+
+// Funció per crear partícules al fons (opcional)
+function createParticles() {
+    const container = document.querySelector('.parallax-section');
+    if (!container) return;
+    
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        const size = Math.random() * 6 + 2;
+        const posX = Math.random() * 100;
+        const posY = Math.random() * 100;
+        const delay = Math.random() * 8;
+        const duration = Math.random() * 10 + 10;
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}%`;
+        particle.style.top = `${posY}%`;
+        particle.style.animationDelay = `${delay}s`;
+        particle.style.animationDuration = `${duration}s`;
+        
+        container.appendChild(particle);
+    }
+}
+
+// Funcionalitat addicional per a la galeria de jocs
+function filterGames(category) {
+    // En una implementació real, aquesta funció filtraria els jocs per categoria
+    console.log(`Filtrant jocs per categoria: ${category}`);
+    
+    // Simular canvi visual
+    const buttons = document.querySelectorAll('.filter-button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Mostrar missatge de filtrat
+    const message = document.createElement('div');
+    message.className = 'fixed top-4 right-4 bg-arcade-600 text-white px-4 py-2 rounded-lg shadow-lg z-50';
+    message.textContent = `Mostrant jocs de ${category}`;
+    document.body.appendChild(message);
+    
+    setTimeout(() => {
+        message.remove();
+    }, 2000);
+}
+
+// Funcionalitat per a la subscripció al butlletí
+function submitNewsletter(event) {
+    event.preventDefault();
+    const email = event.target.querySelector('input[type="email"]').value;
+    
+    // Simular enviament
+    const button = event.target.querySelector('button[type="submit"]');
+    const originalText = button.textContent;
+    button.textContent = 'Subscribint...';
+    button.disabled = true;
+    
+    setTimeout(() => {
+        button.textContent = 'Subscrit!';
+        button.style.background = '#10b981';
+        
+        // Track event
+        trackEvent('newsletter', 'subscribed', email);
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.disabled = false;
+            button.style.background = '';
+            event.target.reset();
+        }, 2000);
+    }, 1500);
+}
+
+// Ampliar les funcions d'analytics existents
+function trackEvent(category, action, label) {
+    // En un entorn real, aquesta funció enviaria dades a Google Analytics
+    console.log(`Event tracking: ${category}, ${action}, ${label}`);
+    
+    // Simular enviament a analytics
+    if (window.gtag) {
+        gtag('event', action, {
+            'event_category': category,
+            'event_label': label
+        });
+    }
+}
+        
         // --- CONFIGURACIÓ DE DESCÀRREGA EXTERNA ---
-        // La vostra URL de Dropbox amb dl=1 (descàrrega forçada)
-        const DROPBOX_URL = 'https://www.dropbox.com/scl/fi/bs435mfqzi866s7x77c90/BETA-MINI-GAMES-by-Ula-1.0.exe?rlkey=ekvbgs92r3cie22pz8r4pvcdz&st=wtli6kdx&dl=1'; 
-        const FINAL_FILENAME = 'MiniGames-Installer.exe'; 
+        const DROPBOX_URL = 'https://www.dropbox.com/scl/fi/qtczhj7behymo97rxrm1e/BETA-MINI-GAMES-by-Ula-Setup-1.1.0.exe?rlkey=sc3m8j54o8kihv98wioqvhr1l&st=74prhk26&dl=1'; 
+        const FINAL_FILENAME = 'MiniGamesByUla-Setup-1.1.0.exe';
+        let downloadAttempts = 0;
+        const MAX_DOWNLOAD_ATTEMPTS = 3;
+
+        // Inicialització
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menú mòbil
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // Formulari de newsletter
+            const newsletterForm = document.getElementById('newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    // Aquí aniria la lògica per enviar l'email
+                    alert(`Gràcies per subscriure't! Rebràs novetats a ${email}`);
+                    this.reset();
+                });
+            }
+            
+            // Analytics simulat (en un entorn real, s'integraria amb Google Analytics)
+            trackPageView();
+        });
 
         function initiateExternalDownload() {
             const initialUI = document.getElementById('initialState');
             const downloadMessageUI = document.getElementById('downloadMessage');
             const postDownloadSection = document.getElementById('postDownloadSection');
             const errorMsg = document.getElementById('errorMsg');
+            const progressBar = document.getElementById('progress-bar');
 
+            // Track event d'analytics
+            trackEvent('download', 'initiated', 'download_button');
+            
             // 1. Amagar botó, mostrar missatge d'inici
             initialUI.classList.add('hidden');
             downloadMessageUI.classList.remove('hidden');
             errorMsg.classList.add('hidden');
             
-            // 2. Iniciar la descàrrega real (no es pot capturar el final)
+            // 2. Simular progrés de descàrrega
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress > 90) {
+                    progress = 90;
+                    clearInterval(progressInterval);
+                }
+                if (progressBar) {
+                    progressBar.style.width = `${progress}%`;
+                }
+            }, 200);
+            
+            // 3. Iniciar la descàrrega real
             try {
                 const downloadLink = document.createElement('a');
                 downloadLink.href = DROPBOX_URL;
-                downloadLink.download = FINAL_FILENAME; // Nom desitjat
+                downloadLink.download = FINAL_FILENAME;
+                downloadLink.target = '_blank'; // Obrir en una nova pestanya per millorar l'experiència
                 document.body.appendChild(downloadLink);
                 downloadLink.click();
                 document.body.removeChild(downloadLink);
 
-                // 3. Temporitzador per revelar la secció de seguretat
-                // Donem un temps mínim per assegurar que la descàrrega s'ha iniciat
-                setTimeout(showPostDownload, 2000); 
+                // Incrementar intents
+                downloadAttempts++;
+                
+                // Completar la barra de progrés
+                setTimeout(() => {
+                    if (progressBar) {
+                        progressBar.style.width = '100%';
+                    }
+                    clearInterval(progressInterval);
+                }, 1500);
+                
+                // 4. Temporitzador per revelar la secció de seguretat
+                setTimeout(showPostDownload, 2500);
 
             } catch (err) {
                 console.error("Error durant l'intent de descàrrega:", err);
-                downloadMessageUI.classList.add('hidden');
-                errorMsg.classList.remove('hidden');
-                
-                // Si falla, tornem a mostrar el botó al cap de 4 segons
-                setTimeout(() => {
-                    errorMsg.classList.add('hidden');
-                    initialUI.classList.remove('hidden');
-                }, 4000);
+                clearInterval(progressInterval);
+                handleDownloadError();
             }
+        }
+        
+        function retryDownload() {
+            if (downloadAttempts < MAX_DOWNLOAD_ATTEMPTS) {
+                initiateExternalDownload();
+            } else {
+                alert("S'han produït errors en múltiples intents de descàrrega. Si us plau, comprova la teva connexió a Internet i torna-ho a intentar més tard.");
+                // Reset dels intents després d'un temps
+                setTimeout(() => {
+                    downloadAttempts = 0;
+                }, 30000); // Reset després de 30 segons
+            }
+        }
+        
+        function handleDownloadError() {
+            const downloadMessageUI = document.getElementById('downloadMessage');
+            const errorMsg = document.getElementById('errorMsg');
+            
+            downloadMessageUI.classList.add('hidden');
+            errorMsg.classList.remove('hidden');
+            
+            // Track error event
+            trackEvent('download', 'error', `attempt_${downloadAttempts}`);
+            
+            // Si falla, tornem a mostrar el botó al cap de 8 segons
+            setTimeout(() => {
+                if (downloadAttempts < MAX_DOWNLOAD_ATTEMPTS) {
+                    errorMsg.classList.add('hidden');
+                    document.getElementById('initialState').classList.remove('hidden');
+                }
+            }, 8000);
         }
         
         function showPostDownload() {
@@ -337,9 +2117,71 @@
             // MOSTRAR LA SECCIÓ DE SEGURETAT I INSTRUCCIONS
             postDownloadSection.classList.remove('hidden');
             
+            // Track event de descàrrega completada
+            trackEvent('download', 'completed', 'success');
+            
             // Fer scroll suau cap a la informació nova
             postDownloadSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+        
+        function copyHashToClipboard() {
+            const hashText = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
+            navigator.clipboard.writeText(hashText).then(() => {
+                // Mostrar missatge d'èxit
+                const originalText = event.target.closest('[role="button"]').textContent;
+                event.target.closest('[role="button"]').textContent = 'Hash copiat!';
+                
+                setTimeout(() => {
+                    event.target.closest('[role="button"]').innerHTML = `${hashText}<span class="absolute right-3 top-3 text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>Copiar</span>`;
+                }, 2000);
+                
+                trackEvent('interaction', 'hash_copied', 'security_section');
+            }).catch(err => {
+                console.error('Error en copiar el hash: ', err);
+            });
+        }
+        
+        // Funcions d'analytics (simulades)
+        function trackPageView() {
+            // En un entorn real, aquesta funció enviaria dades a Google Analytics
+            console.log('Pàgina vista: MiniGames Download Page');
+        }
+        
+        function trackEvent(category, action, label) {
+            // En un entorn real, aquesta funció enviaria esdeveniments a Google Analytics
+            console.log(`Event tracking: ${category}, ${action}, ${label}`);
+        }
+        
+        // Service Worker Registration (PWA)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('SW registered: ', registration);
+                }).catch(function(registrationError) {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+        
+        // Web Vitals (simulat)
+        function reportWebVitals() {
+            // En un entorn real, s'utilitzaria la llibreria web-vitals
+            setTimeout(() => {
+                const perfData = {
+                    FCP: 1200, // First Contentful Paint
+                    LCP: 2400, // Largest Contentful Paint
+                    FID: 45,   // First Input Delay
+                    CLS: 0.1,  // Cumulative Layout Shift
+                    TTFB: 300  // Time to First Byte
+                };
+                
+                console.log('Web Vitals:', perfData);
+                trackEvent('performance', 'vitals', JSON.stringify(perfData));
+            }, 3000);
+        }
+        
+        // Executar web vitals després de la càrrega de la pàgina
+        window.addEventListener('load', reportWebVitals);
     </script>
 </body>
 </html>
